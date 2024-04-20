@@ -1,0 +1,199 @@
+/* Default styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+#wrapper {
+    height: 100vh;
+    background-color: rgb(244, 239, 234);
+    overflow: hidden;
+}
+
+header {
+    margin-left: 40%;
+    margin-top: 50px;
+}
+
+.nav {
+    display: flex;
+    margin-left: 37%;
+    width: 30%;
+    background-color: rgba(240, 248, 255, 0.582);
+}
+
+#men, #women, #kid {
+    width: 155px;
+    font-weight: bold;
+    font-size: medium;
+    border: none;
+    background-color: transparent;
+}
+
+#menImage {
+    position: relative;
+    right: 5px;
+}
+
+#womenimg {
+    position: relative;
+    right: 5px;
+}
+
+#kidimg {
+    position: relative;
+    right: 5px;
+}
+
+#menImage,
+#womenimg,
+#kidimg {
+    display: none; 
+}
+
+#men:hover #menImage,
+#women:hover #womenimg,
+#kid:hover #kidimg {
+    display: inline-block; /* Display the image when button is hovered */
+}
+
+#men:hover,
+#women:hover,
+#kid:hover {
+    background-color: black;
+    color: white;
+}
+
+.contain {
+    margin-top: 20px;
+    margin-left: 35%;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+img {
+    border-radius: 5px;
+    position: relative; 
+}
+
+/* Badge text style */
+
+.badge {
+    position: absolute;
+    top: 0;
+    width: 45px;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white; 
+    padding: 4px 8px; 
+    border-radius: 4px; 
+    font-size: 12px;
+    font-weight: bold; 
+    z-index: 1; 
+}
+
+
+.brand {
+    display: flex;
+    width: 200px;
+    position: relative;
+    right: 5px;
+    position: relative;
+    right: 20px;
+}
+
+.brandname {
+    position: relative;
+    right: 15px;
+}
+
+.price {
+    display: flex;
+    position: relative;
+    bottom: 20px;
+    right: 15px;
+}
+
+/* Style for product cloth name */
+.clothname {
+    margin-top: 5px;
+    font-weight: bold;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    width: 90px;
+    position: relative;
+    top: 5px;
+    left: 10px;
+}
+
+.offpercent {
+    color: red;
+    font-size: medium;
+    margin-left: 10px;
+}
+
+.orignalprice {
+    text-decoration: line-through;
+    margin-left: 10px;
+    color: rgba(165, 168, 170, 0.986);
+}
+
+.Addtocart {
+    height: 20px;
+    width: 88px;
+    position: relative;
+    bottom: 30px;
+    background-color: black;
+    color: white;
+    font-size: small;
+    font-weight: bold;
+}
+
+.first {
+    height: 88;
+    width: 143;
+    position: relative;
+    right: 50px;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 767px) {
+    header {
+        margin-left: 20px;
+    }
+
+    .nav {
+        margin-left: 20px;
+        width: auto;
+    }
+
+    .contain {
+        margin-left: 20px;
+    }
+
+    .first,
+    .second,
+    .third,
+    .fourth {
+        right: 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    header {
+        margin-left: 30%;
+    }
+
+    .nav {
+        margin-left: 27%;
+    }
+
+    .contain {
+        margin-left: 30%;
+    }
+}
+
+/* Styles for devices above 1025px width are already defined in the default styles */
